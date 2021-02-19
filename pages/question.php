@@ -1,15 +1,9 @@
 <?php
-require_once('../includes/setup.php');
+require('../includes/setup.php');
 require('../includes/set_user_id.php');
 require('../includes/set_assistant.php');
 require('../includes/assistant_set_up.php');
 require(switching_assistants("../includes/get_postits.php","../includes/get_postits.php","../includes/get_postits.php","../includes/get_postits_search.php"));
-
-
-$message = $_SESSION['user_code'];
-echo "<script type='text/javascript'>console.log('question.php: session user code: '+'$message');</script>";
-
-
 ?>
 
 <!DOCTYPE html>

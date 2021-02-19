@@ -214,21 +214,3 @@ CREATE TABLE ideas (
   -- FOREIGN KEY (question_id) REFERENCES questions(id),
   FOREIGN KEY (assistant_id) REFERENCES assistants(id)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-
-
-DROP TABLE IF EXISTS experience;
-
-CREATE TABLE experience (
-  id VARCHAR(6) DEFAULT NULL,
-  exp_answer_1 int(11) DEFAULT NULL,
-  exp_answer_2 int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
-
-DROP TABLE IF EXISTS experience;
-
-CREATE TABLE experience (
-  id int(11) unsigned NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  exp_answer_1 int(11) DEFAULT NULL,
-  exp_answer_2 int(11) DEFAULT NULL
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
