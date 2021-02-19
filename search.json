@@ -1,0 +1,13 @@
+https://api.wordassociations.net/associations/v1.0/json/search?
+apikey=907bc27a-745a-4745-aafe-7c87d92e3618
+& text=<word or phrase>
+& lang=de
+& [type=<result type>]
+& [limit=<maximum number of results>]
+& pos=noun
+& [indent=<yes or no>]
+
+
+GET associations/v1.0/json/search?apikey=907bc27a-745a-4745-aafe-7c87d92e3618&text=welcome&lang=en&limit=6 HTTP/1.1
+Host: api.wordassociations.net
+Accept: */*
